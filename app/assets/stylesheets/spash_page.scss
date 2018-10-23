@@ -1,0 +1,85 @@
+// Place all the styles related to the spashPage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #000000;
+  color:#4e2513;
+  section.hero {
+    height: 760px;
+    width: 100%;
+    background:#e6e2d6;
+    display: flex;
+    .left {
+      width: 48%;
+      height: 100%;
+      background: no-repeat center center;
+      background-image: asset-url("COAB-logo-withTagline.png");
+      background-size: 40%;
+      position: relative;
+      &::before{
+        content:"";
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 120px;
+        height: 120px;
+        background: no-repeat center center;
+        background-image: asset-url("corner-1.png");
+        opacity: .7;
+      }
+    }
+    .right {
+      background:#555;
+      width: 52%;
+      height: 100%;
+      position: relative;
+      ul {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        li {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: no-repeat;
+          &:nth-child(1) {
+            background-image: asset-url("ptype-sideView-portrait.jpg");
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+  section.soundSamples {
+    background:#333;
+    height: 220px;
+    width: 100%;
+  }
+  section.emailSignup {
+    background:#444;
+    height: 320px;
+    width: 100%;
+  }
+  section.social {
+    background:#222;
+    height: 120px;
+    width: 100%;
+  }
+  section.productInfo {
+    background:#333;
+    height: 820px;
+    width: 100%;
+  }
+  section.buildProgress {
+    background:#111;
+    height: 420px;
+    width: 100%;
+  }
+}
