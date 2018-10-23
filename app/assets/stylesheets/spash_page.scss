@@ -8,10 +8,12 @@ body {
   background: #000000;
   color:#4e2513;
   section.hero {
-    height: 760px;
+    height: 95vh;
     width: 100%;
     background:#e6e2d6;
-    display: flex;
+    @media(min-width: 768px){
+      display: flex;
+    }
     .left {
       width: 48%;
       height: 100%;
@@ -19,6 +21,9 @@ body {
       background-image: asset-url("COAB-logo-withTagline.png");
       background-size: 40%;
       position: relative;
+      @media(max-width: 768px){
+        width:100%;
+      }
       &::before{
         content:"";
         display: none;
@@ -38,6 +43,9 @@ body {
       width: 52%;
       height: 100%;
       position: relative;
+      @media(max-width: 768px){
+        width:100%;
+      }
       ul {
         position: relative;
         width: 100%;
