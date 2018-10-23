@@ -24,6 +24,10 @@ body {
       @media(max-width: 768px){
         width:100%;
       }
+      @media(min-width: 1370px){
+        width:60%;
+        background-size: 25%;
+      }
       &::before{
         content:"";
         display: none;
@@ -45,6 +49,9 @@ body {
       position: relative;
       @media(max-width: 768px){
         width:100%;
+      }
+      @media(min-width: 1370px){
+        width:40%;
       }
       ul {
         position: relative;
