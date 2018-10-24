@@ -45,10 +45,12 @@ body {
         width: 40%;
         margin: 0 30%;
         position: absolute;
-        bottom: 110px;
+        /* bottom: 110px; */
+        top: 50%;
+        margin-top: 20%;
         @media(min-width: 1370px){
           width:25%;
-          margin: 0 37.5%;
+          margin: 12.5% 37.5%;
         }
         input {
           width: 100%;
