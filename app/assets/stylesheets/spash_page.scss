@@ -62,17 +62,18 @@ body {
           font-size: larger;
           &[type=email] {
             background: transparent;
-            border: 1px solid #000;
+            color:#e6e2d6;
+            border: 2px solid #e6e2d6;
             margin-bottom: 10px;
             font-style: italic;
             padding: 2px 12px;
           }
           &[type=submit] {
-            background: #105c98 no-repeat center center;
+            background: #e6e2d6 no-repeat center center;
             background-image: asset-url("get-updates.png");
             background-size: 50%;
             color: #000;
-            border: 1px solid #000000;
+            //border: 1px solid #000000;
           }
         }
         > img {
