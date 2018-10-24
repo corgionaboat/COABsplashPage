@@ -1,7 +1,7 @@
 %section.hero
   .left
     .email-form
-      - if cookies[!:saved_lead]
+      - if cookies[:saved_lead]
         =image_tag('thanks.png');
       - else
         -#=image_tag('get-updated.png');
