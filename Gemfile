@@ -56,3 +56,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "haml-rails"
 
 gem 'newrelic_rpm'
+
+ruby '2.4.5'
