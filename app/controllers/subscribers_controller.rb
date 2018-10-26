@@ -1,6 +1,10 @@
 class SubscribersController < ApplicationController
+
+  http_basic_authenticate_with name: "corgi", password: "grumbo", except: :create
+
+
   def index
-    @subscriber = Subscriber.new
+    @subscribers = Subscriber.all
   end
 
   def create

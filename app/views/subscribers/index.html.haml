@@ -1,7 +1,6 @@
-- if cookies[:saved_lead]
-  %p Thanks for signing up
-- else
-  %p Sign Up!
-  =form_for @subscriber do |f|
-    =f.email_field :email, placeholder: "email..."
-    = f.submit
+%h2 Email Signups
+
+%ul
+  - @subscribers.each do |subscriber|
+    %li= subscriber.email
+  -#    %td= link_to 'Show', article_path(article)

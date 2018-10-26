@@ -4,9 +4,9 @@
 * {
   box-sizing: border-box;
 }
-body {
+body[data-controller="spash_page"]{
   background: #000000;
-  color:#4e2513;
+  color:#ffffff;
   section.hero {
     height: 100vh;
     width: 100%;
@@ -85,7 +85,6 @@ body {
       }
     }
     .right {
-      background:#555;
       width: 52%;
       height: 100%;
       position: relative;

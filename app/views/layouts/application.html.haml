@@ -15,7 +15,7 @@
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
+  %body{"data-action" => controller.action_name, "data-controller" => controller.controller_path}
     - if notice
       = notice
     = yield
