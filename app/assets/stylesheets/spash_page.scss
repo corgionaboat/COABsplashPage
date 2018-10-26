@@ -109,9 +109,57 @@ body {
           &:nth-child(1) {
             background-image: asset-url("ptype-sideView-portrait.jpg");
             background-size: cover;
+            animation:fade1 16s infinite;
+            -webkit-animation:fade1 16s infinite;
+          }
+          &:nth-child(2) {
+            background-image: asset-url("pcb-with-corgi.jpg");
+            background-size: cover;
+            animation:fade2 16s infinite;
+            -webkit-animation:fade2 16s infinite;
+          }
+          &:nth-child(3) {
+            background-image: asset-url("pcb-1-portrait.jpg");
+            background-size: cover;
+            animation:fade3 16s infinite;
+            -webkit-animation:fade3 16s infinite;
+          }
+          &:nth-child(4) {
+            background-image: asset-url("corgi-1.jpg");
+            background-size: cover;
+            animation:fade4 16s infinite;
+            -webkit-animation:fade4 16s infinite;
           }
         }
       }
+    }
+    @keyframes fade1 {
+      0%   {opacity:1}
+      25% { opacity: 0}
+      50% { opacity: 0}
+      75% { opacity: 0}
+      100% { opacity: 1}
+    }
+    @keyframes fade2 {
+      0%   {opacity:0}
+      25% { opacity: 1}
+      50% { opacity: 0 }
+      75% { opacity: 0}
+      100% { opacity: 0}
+    }
+    @keyframes fade3 {
+      0%   {opacity:0}
+      25% { opacity: 0}
+      50% { opacity: 1}
+      75% { opacity: 0}
+      100% { opacity: 0}
+    }
+    @keyframes fade4 {
+      0%   {opacity:0}
+      25% { opacity: 0}
+      50% { opacity: 0}
+      75% { opacity: 1}
+      100% { opacity: 0}
     }
   }
   section.soundSamples {
