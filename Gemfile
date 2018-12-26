@@ -57,4 +57,7 @@ gem "haml-rails"
 
 gem 'newrelic_rpm'
 
-ruby '2.4.5'
+#ruby '2.4.5'
+
+gem 'solidus'
+gem 'solidus_auth_devise'
